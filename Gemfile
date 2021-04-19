@@ -21,7 +21,10 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'devise'
+gem 'devise-bootstrap-views', '~> 1.0'
+gem 'iex-ruby-client'
+gem "font-awesome-rails"
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -42,6 +45,10 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :production do
+  gem 'pg'
 end
 
 group :test do
